@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <main className="text-white bg-[#02050A]" style={{ fontFamily: 'Libre Franklin, sans' }}>
       {/* style={{ fontFamily: 'Impact, sans-serif'}} */}
-      <section className="flex  justify-center items-center mb-[250vh] border-2 border-green-400">
+      <section className="flex  justify-center items-center mb-[250vh] ">
 
         <div className=" bg-gradient-to-t from-transparent from-20% to-[#00224E] h-[150vh] w-[100vw]" />
         <div className="-mt-[50vh] w-[100vw] h-auto flex flex-col absolute justify-center items-center ">
@@ -132,7 +132,7 @@ export default function Home() {
             <p className="text-[3vh] -mt-3" >a requirement for certification by the blokc</p>
           </article>
 
-          <section className="absolute flex justify-center items-center mt-[350vh] gap-24 w-full h-[150vh] border-2 border-yellow-400 bg-gradient-to-b from-transparent from-20% via-[#003521] to-transparent">
+          <section className="absolute flex justify-center items-center mt-[350vh] gap-24 w-full h-[150vh] bg-gradient-to-b from-transparent from-20% via-[#003521] to-transparent">
             <div className=" bg-cover bg-center border-2 border-gray-500 rounded-full w-[40vh] h-[40vh] " style={{ backgroundImage: 'url("https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/380720363_6507949725993259_5607206228177018191_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGpuv6d0VJYPCTqruwo9K-71uEzXq_GPw7W4TNer8Y_DvuD1OLHrXVYvSFKA43uN4pkO5p-sMM7UKD_yNIZhY6j&_nc_ohc=wRCEkUeNHwkAX-Bg9zR&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfAoKzk6b6ztEOdo_Q6siVl31ubHB_5nUxIAZNrK5A5CBQ&oe=65E9D399")' }} />
 
             <article className="flex flex-col text-[3vh] text-white max-w-[30vw]">
@@ -141,7 +141,7 @@ export default function Home() {
             </article>
           </section>
 
-          <section className=" absolute flex justify-center items-center mt-[700vh] gap-24 border-2 border-orange-400 w-full h-[150vh] bg-gradient-to-b from-transparent from-20% via-[#666800] to-transparent">
+          <section className=" absolute flex justify-center items-center mt-[700vh] gap-24 w-full h-[150vh] bg-gradient-to-b from-transparent from-20% via-[#666800] to-transparent">
 
             <article className="flex flex-col text-[3vh] text-white max-w-[60vw] justify-center items-center">
               <p className="text-[6vh]">About the Project</p>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-[330vh] py-[50vh] border-2 border-red-500 h-auto w-full pt-[80vh] flex bg-gradient-to-b from-transparent from-20% via-[#381001] to-transparent">
+      <section className="mt-[330vh] py-[50vh] h-auto w-full pt-[80vh] flex bg-gradient-to-b from-transparent from-20% via-[#381001] to-transparent">
         <section className="flex flex-col items-center justify-center gap-8 w-[50vw]">
 
           <button onClick={() => { connectWallet(); }}
