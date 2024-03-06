@@ -15,7 +15,7 @@ export default function Home() {
     });
     setwalletKey(accounts[0]);
   };
-  //<Minting>
+  //Minting
   const [mintingAmount, setMintingAmount] = useState<number>();
   const [submitted, setSubmitted] = useState(false);
   const [transactionHash, setTransactionHash] = useState("");
@@ -44,9 +44,9 @@ export default function Home() {
       setMintingAmount(0);
     }
   };
-  //</Minting>
 
-  //<Staking>
+
+  //Staking
   const [stakingAmount, setStakingAmount] = useState<number>();
   const stakeCoin = async () => {
     const { ethereum } = window as any;
@@ -72,9 +72,9 @@ export default function Home() {
       setStakingAmount(0);
     }
   };
-  //</Staking>
 
-  //<Withdraw>
+
+  //Withdrawal
   const withdrawCoin = async () => {
     const { ethereum } = window as any;
     const provider = new BrowserProvider(ethereum);
@@ -90,8 +90,8 @@ export default function Home() {
       alert(`Minting failed: ${decodedError?.args}`);
     }
   };
-  //</Withdraw>
-  //<Import Token>
+
+  //Importing Token
   const importToken = async () => {
     const { ethereum } = window as any;
     const tokenAddress = "0x1D0E8da8c591e34EDE73Bdcf55D9B8f85B35B0d1";
@@ -117,7 +117,6 @@ export default function Home() {
       console.log(error);
     }
   };
-  //</Import Token>
 
   return (
     <main className="text-white bg-[#02050A]" style={{ fontFamily: 'Libre Franklin, sans' }}>
